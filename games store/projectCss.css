@@ -1,0 +1,169 @@
+
+
+ul {
+    text-transform: uppercase;
+    background-color: #2a2a2a;
+    border-radius: 7px;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    /* width: 60px; */
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li{
+    float: left;
+}
+
+a{
+    /* display: block;   */
+    text-decoration: none;
+    padding: 10px;
+    color: #ccc;
+    transition-duration: 0.4s; 
+    /* background-color: black; */
+}
+.headerLinks{
+    /* margin: 7px; */
+    /* float: left; */
+    letter-spacing: .075em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#active{
+    background-color: #212020;
+    border-radius: 7px;
+}
+.headerLinks:hover{
+    color : blue;
+}
+span{
+    float: left;
+    padding: 10px;
+    margin: 22px;
+    margin-top: 0px;
+    background-color:#007aff;
+    border-radius: 7px;
+    margin-left: 150px;
+}
+.price{
+    color: white;
+    float: left;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+.offerGames{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    padding-bottom: 0px;
+    padding-top: 20px;
+}
+td{
+    text-align: center;
+    height: 50%;
+    width: 30%;
+    /* border: 3px solid green; */
+}
+td img{
+    border-radius: 10px;
+    height: 70%;
+}
+table{
+    width: 100%;
+    height: 90%;
+    /* border: 3px solid green; */
+}
+.price2{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.img2{
+    border-radius: 10px;
+    height: 400px;
+    width: 305.26px;   
+}
+.slide-frame{
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 280px;
+    margin-top: 20px;
+}
+.slide-frame2{
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+/*---------slide animation---------------*/
+@-webkit-keyframes slide_animation{
+    0%{left: 0px;}
+    10%{left: 0px;}
+    20%{left: 1200px;}
+    30%{left: 1200px;}
+    40%{left: 2400px;}
+    50%{left: 2400px;}
+    60%{left: 1200px;}
+    70%{left: 1200px;}
+    80%{left: 0px;}
+    90%{left: 0px;}
+    100%{left: 0px;}
+}
+.slide-images{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+.image-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+.image-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+.button {
+    border-radius:8px;
+    border-color: rgb(0, 0, 0);
+    color: rgb(172, 17, 146);
+    background-color: #212020;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration:none;
+    display:inline-flex;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top:30px;
+    margin-left: 48%;
+  }
+  .button:hover{
+    color: rgb(155, 17, 93);
+    font-size: 20px;
+    object-fit: fill;
+    box-shadow: 0 0 3px 4px rgb(109, 7, 70);
+    transition-duration: 0.3s;
+  }
+  hr{
+    color: blueviolet;
+    size: 15px;
+  }

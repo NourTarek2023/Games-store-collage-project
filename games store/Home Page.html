@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectCss.css">
+    <title>Laebon Store | Download Your Favorate Games</title>
+</head>
+<body style="background-color: rgb(18, 18, 18);color: rgb(245, 245, 245);" onload="displayDate()">
+    <script language="javascript">
+        function my(){
+            document.getElementById("sign in").innerHTML = "NO"
+        }
+        index = 0
+        slides()
+        function slides(){
+            x = document.getElementsByClassName("slideDiv")
+            for(i = 0; i < x.length; i++)
+                x[i].style.display = "none"
+            
+            if(index > x.length-1) index=0;
+            x[index].style.display = "block"
+            index++
+
+            setTimeout(slideshow,2000)
+        }
+        function displayDate()
+        {
+            today = new Date()
+            document.getElementById('date').innerHTML=today.toLocaleDateString();
+            document.getElementById('time').innerHTML=today.toLocaleTimeString();
+            setTimeout(displayDate, 1000)
+        }
+
+    </script>
+    <ul class="header">
+        <li><a href="Home Page.html" class="headerLinks" id="active">Home</a></li>
+        <li><a href="Offers.html" class="headerLinks">Offers</a></li>
+        <li><a href="Accessories.html" class="headerLinks">Accessories</a></li>
+        <li><a href="Games.html" class="headerLinks">Games</a></li>
+        <li style="float: right;"><a href="Sign in.html" class="headerLinks" id="sign in">Sign in</a></li>
+    </ul>
+
+   
+    <div class="slide-frame2">
+        <div class="slide-images">
+            
+            <div class="image-container">
+                <img src="pic2.png">
+            </div>
+            <div class="image-container">
+                <img src="pic3.jpg">
+            </div>
+            <div class="image-container">
+                <img src="pic4.jpg">
+            </div>
+        </div>
+
+    </div>
+    <p id="date"></p>
+    <p id="time"></p>
+
+    <div class="x">
+        <a href="Sign in.html" class="headerLinks" id="sign in"><button class="button button1">Sign In</button> </a> 
+    </div>
+    <hr>    
+    
+</body>
+</html>
